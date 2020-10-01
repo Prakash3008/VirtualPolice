@@ -1,0 +1,181 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+
+	margin:3;
+	/*background: #222eee;*/
+	font-family: 'Arial', sans-serif;
+	font-weight: 800;
+  background-color:#999966;
+  height:50em;
+}
+    .wrapper {
+  text-transform: uppercase;
+  /*background: #ececec;*/
+  color: #555;
+  cursor: help;
+  font-family:  sans-serif;
+  font-size: 20px;
+  margin: 100px 75px 10px 75px;
+  padding: 5px 10px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+}
+
+.wrapper .tooltip {
+  background: #1496bb;
+  bottom: 100%;
+  color: #fff;
+  display: block;
+  left: -25px;
+  margin-bottom: 15px;
+  opacity: 1;
+  padding: 20px;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+.wrapper .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid #1496bb 10px;
+  bottom: -10px;
+  content: "";
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+.navi{
+width:50%;
+background:#000033;
+height:250px;
+margin:3;
+margin-left:700px;
+margin-top: -700px;
+padding-top: 3px;
+border-radius: 100px;
+opacity:0.95;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #ff8181;
+    color: #FFF;
+    width: 220px;
+    height: 220px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+	font-size:20px;
+    font-weight: bold;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #bd6565;
+    transition: .4s;
+}
+
+.btn:active{
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+}
+
+
+#btn1:hover{
+  color: red;
+  background: black;
+}
+#btn3:hover{
+  color: red;
+  background: black;
+}
+#btn2:hover{
+  color: red;
+  background: black;
+}
+}
+</style>
+</head>
+
+<script type="text/javascript">
+        var disp = document.getElementById("popover");
+        var h1 = document.getElementById("btn1");
+        var h2 = document.getElementById("btn2");
+        var h3 = document.getElementById("btn3");
+        h1.onmouseover = function()
+        {
+          disp.innerHTML = "File an FIR"
+        }
+        h1.onmouseout = function()
+        {
+          disp.innerHTML= "Hello I am a Bot"
+        }
+        h2.onmouseover = function()
+        {
+          disp.innerHTML = "Complain Status"
+        }
+        h2.onmouseout = function()
+        {
+          disp.innerHTML= "Hello I am a Bot"
+        }
+        h3.onmouseover = function()
+        {
+          disp.innerHTML = "FIR Download"
+        }
+        h3.onmouseout = function()
+        {
+          disp.innerHTML= "Hello I am a Bot"
+        }
+		function play() 
+		{
+			var myMusic= document.getElementById("music");
+			//window.alert("hi");
+			myMusic.play();
+		}
+		function play1() 
+		{
+			var myMusic1= document.getElementById("music1");
+			//window.alert("hi");
+			myMusic1.play();
+		}
+		function play2() 
+		{
+			var myMusic2= document.getElementById("music2");
+			//window.alert("hi");
+			myMusic2.play();
+		}
+  </script>
+<body><br><br>
+<audio controls id="music" hidden>
+  <source src="file_an_complain.wav" type="audio/wav">
+</audio>
+<audio controls id="music1" hidden>
+  <source src="complain_status.wav" type="audio/wav">
+</audio>
+<audio controls id="music2" hidden>
+  <source src="fir_download.wav" type="audio/wav">
+</audio>	
+<div class = "wrapper">            
+    <img src="vp1.png" width="200px" height="800px">
+    <div><span id="popover" class="tooltip">Hello I am your Virtual Aarakshi</span></div></div>
+	
+<div class="navi"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="registration.html" class="btn" id="btn1" onmousemove="play()">FILE AN COMPLAIN</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn" id="btn2" onmousemove="play1()">COMPLAIN STATUS</a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php" class="btn" id="btn3" onmousemove="play2()">FIR Download</a>
+         <br><br><br><br><br><br>
+</div></div>
+</p>
+</body>
+</html>
